@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+freebuff-sites-build/
+
+# Local Wrangler / Miniflare state
+.wrangler/
+
+# Full-resolution originals and scratch screenshots kept out of the build
+source-media/
+screenshots/
+
+# Scratch files used while building the photo set
+contact-sheet.html
+photo-check.html
+inspect.js
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
