@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { asset } from '../lib/asset'
 import { Reveal } from '../components/Reveal'
 import { ArrowRight, ArrowUpRight, CheeseArt, HandshakeIcon, OliveArt, SnowIcon } from '../components/Illustrations'
 
@@ -24,7 +25,7 @@ export function Storia() {
           <div>
             <div className="story-hero__media">
               <img
-                src="/img/shop.webp"
+                src={asset('/img/shop.webp')}
                 alt="The Mabò shop and counter in Haren, Brussels"
                 fetchPriority="high"
               />
@@ -102,7 +103,7 @@ export function Storia() {
           <Reveal>
             <div className="family__media">
               <img
-                src="/img/photos/prosciutto.webp"
+                src={asset('/img/photos/prosciutto.webp')}
                 alt="Prosciutto sliced at the Mabò counter"
                 loading="lazy"
               />
@@ -203,7 +204,7 @@ export function Storia() {
 
       <section className="puglia" style={{ minHeight: 'clamp(24rem, 44vw, 36rem)' }}>
         <div className="puglia__bg">
-          <img src="/img/photos/trulli.webp" alt="The trulli of Alberobello" loading="lazy" />
+          <img src={asset('/img/photos/trulli.webp')} alt="The trulli of Alberobello" loading="lazy" />
         </div>
         <div className="puglia__content">
           <Reveal>

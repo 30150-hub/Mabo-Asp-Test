@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { asset } from '../lib/asset'
 import { nav, site } from '../data/site'
 import { FacebookIcon, InstagramIcon } from './Illustrations'
 import { Reveal } from './Reveal'
@@ -43,7 +44,7 @@ export function Footer() {
         <div className="footer__brand-block">
           <div className="footer__brand">
             <img
-            src="/brand/mabo-logo.png"
+            src={asset('/brand/mabo-logo.png')}
             alt=""
             style={{ background: 'var(--paper)', borderRadius: '50%', padding: '.4rem' }}
           />

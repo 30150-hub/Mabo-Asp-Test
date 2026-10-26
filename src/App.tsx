@@ -1,4 +1,5 @@
 import { AnimatePresence, motion, useReducedMotion, useScroll, useSpring } from 'framer-motion'
+import { asset } from './lib/asset'
 import { useEffect, useState } from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import { Header } from './components/Header'
@@ -83,7 +84,7 @@ function Intro() {
           transition={{ duration: 0.75, ease: [0.76, 0, 0.24, 1] }}
         >
           <div className="preloader__inner">
-            <img className="preloader__stamp" src="/brand/mabo-logo.png" alt="Mabò" />
+            <img className="preloader__stamp" src={asset('/brand/mabo-logo.png')} alt="Mabò" />
             <span className="preloader__label">Antichi Sapori Pugliesi · Bruxelles</span>
           </div>
         </motion.div>

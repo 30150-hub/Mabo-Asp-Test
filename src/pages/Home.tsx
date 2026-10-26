@@ -1,4 +1,5 @@
 import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion'
+import { asset } from '../lib/asset'
 import { useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { groups } from '../data/catalog'
@@ -106,7 +107,7 @@ export function Home() {
           <div className="hero__media">
             <motion.div className="hero__frame" style={{ y: imageY }}>
               <img
-                src="/img/table.webp"
+                src={asset('/img/table.webp')}
                 alt="An Italian table set with cheeses, bread and pasta at Mabò"
                 fetchPriority="high"
               />
@@ -124,7 +125,7 @@ export function Home() {
               <span>Fresh arrivals from Italy</span>
             </motion.div>
             <motion.img
-              src="/brand/deco1.png"
+              src={asset('/brand/deco1.png')}
               alt=""
               className="hero__leaf hero__leaf--basil"
               initial={reduce ? false : { opacity: 0, scale: 0.9, rotate: -8 }}
@@ -132,7 +133,7 @@ export function Home() {
               transition={{ delay: 1, duration: 1 }}
             />
             <motion.img
-              src="/brand/deco4.png"
+              src={asset('/brand/deco4.png')}
               alt=""
               className="hero__leaf hero__leaf--olive"
               initial={reduce ? false : { opacity: 0, scale: 0.9, rotate: 8 }}
@@ -156,15 +157,15 @@ export function Home() {
             <Reveal>
               <div className="intro__photo">
                 <img
-                  src="/img/shop.webp"
+                  src={asset('/img/shop.webp')}
                   alt="Inside the Mabò warehouse and counter in Haren, Brussels"
                   loading="lazy"
                 />
               </div>
               <div className="intro__small">
-                <img src="/img/photos/prosciutto.webp" alt="Prosciutto being sliced" loading="lazy" />
+                <img src={asset('/img/photos/prosciutto.webp')} alt="Prosciutto being sliced" loading="lazy" />
               </div>
-              <img className="intro__stamp" src="/brand/mabo-logo.png" alt="" />
+              <img className="intro__stamp" src={asset('/brand/mabo-logo.png')} alt="" />
             </Reveal>
           </div>
 
@@ -268,7 +269,7 @@ export function Home() {
           <Reveal>
             <div className="fresh__media">
               <img
-                src="/img/photos/burrata.webp"
+                src={asset('/img/photos/burrata.webp')}
                 alt="Fresh burrata, delivered from Italy"
                 loading="lazy"
               />
@@ -353,7 +354,7 @@ export function Home() {
           <div className="worlds__grid">
             <Reveal>
               <article className="world-card">
-                <img src="/img/warehouse.webp" alt="The Mabò team at work in Haren" loading="lazy" />
+                <img src={asset('/img/warehouse.webp')} alt="The Mabò team at work in Haren" loading="lazy" />
                 <div>
                   <span className="world-card__eyebrow">For professionals</span>
                   <h3 className="world-card__title">Horeca supply</h3>
@@ -370,7 +371,7 @@ export function Home() {
             </Reveal>
             <Reveal delay={0.1}>
               <article className="world-card">
-                <img src="/img/table.webp" alt="An Italian table at home" loading="lazy" />
+                <img src={asset('/img/table.webp')} alt="An Italian table at home" loading="lazy" />
                 <div>
                   <span className="world-card__eyebrow">For home cooks</span>
                   <h3 className="world-card__title">La Bottega</h3>
@@ -449,7 +450,7 @@ export function Home() {
 
       <section className="puglia">
         <div className="puglia__bg">
-          <img src="/img/photos/trulli.webp" alt="The trulli of Alberobello, Puglia" loading="lazy" />
+          <img src={asset('/img/photos/trulli.webp')} alt="The trulli of Alberobello, Puglia" loading="lazy" />
         </div>
         <div className="puglia__content">
           <Reveal>
@@ -508,7 +509,7 @@ export function Home() {
             </Reveal>
             <Reveal delay={0.1}>
               <div className="media media--rounded media--zoom" style={{ aspectRatio: '1.1' }}>
-                <img src="/img/photos/burrata.webp" alt="Fresh burrata" loading="lazy" />
+                <img src={asset('/img/photos/burrata.webp')} alt="Fresh burrata" loading="lazy" />
               </div>
             </Reveal>
           </div>

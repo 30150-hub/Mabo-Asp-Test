@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { asset } from '../lib/asset'
 import { hamperItems, products } from '../data/catalog'
 import { site } from '../data/site'
 import { ProductCard } from '../components/ProductCard'
@@ -82,7 +83,7 @@ export function Bottega() {
           <div className="bottega-hero__media">
             <div className="media media--rounded media--zoom" style={{ height: '100%' }}>
               <img
-                src="/img/table.webp"
+                src={asset('/img/table.webp')}
                 alt="An Italian table laid with cheese, bread and wine"
                 fetchPriority="high"
               />
@@ -234,7 +235,7 @@ export function Bottega() {
             <Reveal>
               <div className="media media--arch media--zoom" style={{ aspectRatio: '0.9' }}>
                 <img
-                  src="/img/shop.webp"
+                  src={asset('/img/shop.webp')}
                   alt="The Mabò counter in Haren, Brussels"
                   loading="lazy"
                 />

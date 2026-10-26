@@ -1,4 +1,5 @@
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion'
+import { asset } from '../lib/asset'
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useCart } from '../context/CartContext'
@@ -78,7 +79,7 @@ export function CartDrawer() {
               {items.length === 0 ? (
                 <div className="cart-empty">
                   <img
-                    src="/img/art/pasta.png"
+                    src={asset('/img/art/pasta.png')}
                     alt=""
                     className="cart-empty__icon"
                     style={{ mixBlendMode: 'multiply' }}

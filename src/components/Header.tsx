@@ -1,4 +1,5 @@
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion'
+import { asset } from '../lib/asset'
 import { useEffect, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { nav, site } from '../data/site'
@@ -8,7 +9,7 @@ import { BagIcon, CloseIcon, MenuIcon } from './Illustrations'
 function Brand({ onClick }: { onClick?: () => void }) {
   return (
     <Link to="/" className="brand" aria-label="Mabò ASP home" onClick={onClick}>
-      <img className="brand__stamp" src="/brand/mabo-logo.png" alt="" width={48} height={45} />
+      <img className="brand__stamp" src={asset('/brand/mabo-logo.png')} alt="" width={48} height={45} />
       <span className="brand__text">
         <span className="brand__name">Mabò</span>
         <span className="brand__sub">Antichi Sapori Pugliesi</span>
@@ -48,7 +49,7 @@ function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
             <Link to="/" onClick={onClose} className="brand" aria-label="Mabò ASP home">
               <img
                 className="brand__stamp"
-                src="/brand/mabo-logo.png"
+                src={asset('/brand/mabo-logo.png')}
                 alt=""
                 style={{ filter: 'brightness(0) invert(1)' }}
               />

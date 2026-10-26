@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { asset } from '../lib/asset'
 import { products } from '../data/catalog'
 import { site } from '../data/site'
 import { Accordion } from '../components/Accordion'
@@ -20,7 +21,7 @@ export function Horeca() {
       <section className="horeca-hero">
         <div className="horeca-hero__bg">
           <img
-            src="/img/shop.webp"
+            src={asset('/img/shop.webp')}
             alt="Fresh Italian produce being prepared at the Mabò warehouse in Haren"
             fetchPriority="high"
           />
@@ -114,7 +115,7 @@ export function Horeca() {
           <Reveal delay={0.1}>
             <div className="media media--rounded media--zoom" style={{ aspectRatio: '0.85' }}>
               <img
-                src="/img/photos/prosciutto.webp"
+                src={asset('/img/photos/prosciutto.webp')}
                 alt="Prosciutto being prepared for service"
                 loading="lazy"
               />

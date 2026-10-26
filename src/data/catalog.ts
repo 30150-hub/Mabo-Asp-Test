@@ -1,3 +1,4 @@
+import { asset } from '../lib/asset'
 export type Group = {
   slug: string
   name: string
@@ -87,7 +88,7 @@ export const products: Product[] = [
     group: 'dairy',
     origin: 'Andria, Puglia',
     note: 'Creamy stracciatella heart, handmade each morning.',
-    art: '/img/photos/burrata.webp',
+    art: asset('/img/photos/burrata.webp'),
     badge: 'Fresh',
     featured: true,
   },
@@ -122,7 +123,7 @@ export const products: Product[] = [
     group: 'salumi',
     origin: 'Parma, Emilia-Romagna',
     note: 'Sea salt only. Sliced to order for the counter.',
-    art: '/img/photos/prosciutto.webp',
+    art: asset('/img/photos/prosciutto.webp'),
     badge: 'Signature',
   },
   {
@@ -131,7 +132,7 @@ export const products: Product[] = [
     group: 'salumi',
     origin: 'Martina Franca, Puglia',
     note: 'Dry-cured with black pepper and a little Salento wine.',
-    art: '/img/art/salami.png',
+    art: asset('/img/art/salami.png'),
   },
   {
     id: 'nduja',
@@ -155,7 +156,7 @@ export const products: Product[] = [
     group: 'pasta',
     origin: 'Bari, Puglia',
     note: 'Hand-rolled each week. The classic cime di rapa pairing.',
-    art: '/img/art/pasta.png',
+    art: asset('/img/art/pasta.png'),
     badge: 'Fresh',
   },
   {
@@ -180,7 +181,7 @@ export const products: Product[] = [
     group: 'forno',
     origin: 'Bari, Puglia',
     note: 'Dimpled, olive-oiled, baked on the day of delivery.',
-    art: '/img/art/bread.png',
+    art: asset('/img/art/bread.png'),
     badge: 'Fresh',
   },
   {
@@ -230,7 +231,7 @@ export const products: Product[] = [
     group: 'olio',
     origin: 'Corato, Puglia',
     note: 'Grassy, peppery, pressed from the first harvest.',
-    art: '/img/art/oil.png',
+    art: asset('/img/art/oil.png'),
     badge: 'Signature',
   },
   {
@@ -263,7 +264,7 @@ export const products: Product[] = [
     group: 'dolci',
     origin: 'Tuscany',
     note: 'Twice-baked, almond-heavy. Made for Vin Santo.',
-    art: '/img/art/biscuits.png',
+    art: asset('/img/art/biscuits.png'),
   },
   {
     id: 'caffe',
@@ -291,8 +292,8 @@ export const hamperItems = [
     tag: 'The classic',
     desc: 'Orecchiette, Coratina oil, San Marzano tomatoes, taralli and a bottle of Primitivo.',
     price: 'On request',
-    art: '/img/art/oil.png',
-    props: ['/img/art/oil.png', '/img/art/pasta.png', '/img/art/bread.png'],
+    art: asset('/img/art/oil.png'),
+    props: [asset('/img/art/oil.png'), asset('/img/art/pasta.png'), asset('/img/art/bread.png')],
     size: 'Box of 6',
   },
   {
@@ -301,8 +302,8 @@ export const hamperItems = [
     tag: 'To share',
     desc: 'Taralli, olives, capocollo, caciocavallo and a chilled bottle of Falanghina.',
     price: 'On request',
-    art: '/img/art/salami.png',
-    props: ['/img/art/salami.png', '/img/art/glass.png', '/img/art/bread.png'],
+    art: asset('/img/art/salami.png'),
+    props: [asset('/img/art/salami.png'), asset('/img/art/glass.png'), asset('/img/art/bread.png')],
     size: 'Box of 7',
   },
   {
@@ -311,8 +312,8 @@ export const hamperItems = [
     tag: 'Limited',
     desc: 'Panettone, cantuccini, pasticciotto, balsamico and a selection of festive salumi.',
     price: 'On request',
-    art: '/img/art/biscuits.png',
-    props: ['/img/art/biscuits.png', '/img/art/glass.png', '/img/art/salami.png'],
+    art: asset('/img/art/biscuits.png'),
+    props: [asset('/img/art/biscuits.png'), asset('/img/art/glass.png'), asset('/img/art/salami.png')],
     size: 'Box of 9',
   },
 ]
